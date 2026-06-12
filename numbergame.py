@@ -15,12 +15,13 @@ while True:
 
     elif guess < secret:
         if guess >= secret - 10:
-            print("Low!")
+            print(f"Higher than {guess}!")
         else:
             print("Too low!")
 
     else:
         if guess <= secret + 10:
-            print("High!")
+            print(f"Lower than {guess}!")
         else:
             print("Too high!")
+            
